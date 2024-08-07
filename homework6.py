@@ -9,10 +9,8 @@ class Field:
         return str(self.value)
 
 
-
 class Name(Field):
     pass
-
 
 
 class Phone(Field):
@@ -21,7 +19,6 @@ class Phone(Field):
             super().__init__(value)
         else:
             raise ValueError("Phone must be 10 digits")
-
 
 
 class Record:
